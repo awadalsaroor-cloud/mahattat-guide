@@ -95,7 +95,7 @@ function renderPage(){
   const it = currentItem();
   const pageNum = it.pages[state.pageIndex];
   const padded = String(pageNum).padStart(3, '0');
-  document.getElementById('reader-img').src = `/pages/page-${padded}.jpg`;
+  document.getElementById('reader-img').src = `pages/page-${padded}.jpg`;
   document.getElementById('page-counter').textContent = `${state.pageIndex + 1} / ${totalPages()}`;
   document.getElementById('reader-img-wrap').scrollTop = 0;
   document.getElementById('btn-prev').disabled = state.pageIndex === 0;
